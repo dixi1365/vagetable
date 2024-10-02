@@ -94,7 +94,7 @@ const Home =  () => {
   return (
     <>
       <Navbar />
-      <Container maxW={"container.xl"} px={0}>
+      <Container maxW={"container.xl"} px={0} centerContent>
       <Box
         position="relative"
         // height={{ base: "70vh", md: "100%" }} // Full viewport height
