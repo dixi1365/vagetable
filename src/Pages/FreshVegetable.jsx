@@ -86,7 +86,7 @@ const FreshVegetable = () => {
         <Box  flex="1" textAlign="left" height="30px"fontSize="18px"  borderBottom="1px solid #e0ebeb" pb={20}>
             <Image src="https://borobazar.vercel.app/assets/images/category/icon/diet-nutrition.svg" alt="Diet Nutrition" boxSize="30px" mr={10} ml={14} />
               Diet Nutrition
-            </Box>
+            </Box >
             <AccordionIcon  boxSize="24px" opacity={0.8} />
           </AccordionButton>
         </h2>
