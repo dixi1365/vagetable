@@ -49,6 +49,12 @@ const Navbar = () => {
       case "Cart":
         navigate("/cart");
         break;
+        case "myaccount":
+        navigate("/Myaccount");
+        break;
+        case "Policy":
+        navigate("/Policy");
+        break;
       default:
         console.log("Item not handled:", item);
     }
@@ -56,14 +62,15 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Container maxW={"container.xl"} px={0}>
+    <Container maxW={"container.4xl"} px={0} centerContent>
       <Flex
-        minWidth="max-content"
+        //minWidth="max-content"
         alignItems="center"
         gap="2"
         px={20}
         bg="white"
         height={85}
+        
       >
         <Link
           to="/"
@@ -79,13 +86,13 @@ const Navbar = () => {
               alt="Logo"
               // boxSize="80px" // Adjust size as needed
               mr={2} // Margin to space the image from the heading
-              w={131}
-              h={30}
+              //w={131}
+              //h={30}
             />
           </Box>
         </Link>
 
-        <Box display="flex" gap="20px" alignItems="center">
+        <Box display="flex" gap="10px" alignItems="center">
           {/* Dropdown Menu for Demos */}
           <Accordion allowMultiple>
             <AccordionItem>
@@ -106,7 +113,7 @@ const Navbar = () => {
               <AccordionPanel
                 pb={4}
                 pl={8}
-                onClick={() => handleClick("arugula")}
+                onClick={() => handleClick("myaccount")}
                 cursor=" pointer"
               >
                 arugula
@@ -117,23 +124,23 @@ const Navbar = () => {
             </AccordionItem>
           </Accordion>
           {/* Static links */}
-          <GridItem w="70px" h="20" bg="red.500">
+          <GridItem w="70px" h="20" bg="red.500" onClick={() => handleClick(" Categories")} cursor="pointer">
             Categories
           </GridItem>
 
-          <GridItem w="70px" h="20" bg="red.500">
+          <GridItem w="70px" h="20" bg="red.500" onClick={() => handleClick("Dietary")} cursor="pointer">
             Dietary
           </GridItem>
 
-          <GridItem w="70px" h="20" bg="red.500">
-            Search
+          <GridItem w="70px" h="20" bg="red.500" onClick={() => handleClick("Policy")} cursor="pointer">
+            policy
           </GridItem>
 
-          <GridItem w="70px" h="20" bg="red.500">
+          <GridItem w="70px" h="20" bg="red.500" onClick={() => handleClick(" Shops")} cursor="pointer">
             Shops
           </GridItem>
 
-          <GridItem w="70px" h="20" bg="red.500">
+          <GridItem w="70px" h="20" bg="red.500"   onClick={() => handleClick("myaccount")} cursor="pointer" >
             Pages
           </GridItem>
         </Box>

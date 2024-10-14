@@ -93,6 +93,7 @@ const Home =  () => {
 
   return (
     <>
+    
       <Navbar />
       <Container maxW={"container.xl"} px={0} centerContent>
       <Box
@@ -104,7 +105,7 @@ const Home =  () => {
         backgroundPosition="center" // Center the image
         backgroundRepeat="no-repeat" // Prevent repeating the image
         mb={30}
-        overflow={"hidden"}
+        overflow={"hidden"}               
       >
         <Container
           height="100%" // Make container fill the full height

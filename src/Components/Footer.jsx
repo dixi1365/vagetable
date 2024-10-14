@@ -22,6 +22,7 @@ import { color } from "framer-motion";
 const Footer = () => {
   return (
     <>
+    
       <Box width="100%" height="100%" mt={30}>
         <Flex gap={8} px={50}>
           <Box width="29%">
